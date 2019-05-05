@@ -3,7 +3,7 @@
 class Set:
 
     def __init__(self, element_list):
-        self.elements = list()
+        self.elements = list(element_list)
         for element in element_list:
             if element not in self.elements:
                 self.elements.append(element)

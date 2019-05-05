@@ -1,4 +1,5 @@
-from arrayClass import Array2D
+from ArrayTools.arrayClass import Array2D
+
 
 class Matrix:
 
