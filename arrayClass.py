@@ -7,20 +7,18 @@ class Array:
 
     def __init__(self, size):
         assert size > 0, "Array size must be greater than 0."
-        self.size = size
+        self.length = size
         PyArrayType = ctypes.py_object * size
         self.elements = PyArrayType()
-        self.clear(0)
+        self.clear(None)
 
     def __len__(self):
-        return self.size
+        return self.length
 
     def __getitem__(self, index):
-        assert 0 <= index < len(self), "Array subcript out of range."
         return self.elements[index]
 
     def __setitem__(self, index, value):
-        assert 0 <= index < len(self), "Array subcript out of range."
         self.elements[index] = value
 
     def clear(self, value):
@@ -90,3 +88,47 @@ class Array2D:
     def clear(self, value):
         for row in self._row_array:
             row.clear(value)
+
+class MultiArray:
+
+    def __init__(self, *dimensions):
+        self._dimensions = dimensions
+        size = 1
+        for dimension in dimensions:
+            assert dimension > 0, "Each dimension must be greater than 0."
+            size *= dimension
+        self._elements = Array(size)
+        self._factors = Array(len(dimensions))
+        self._factors.clear(1)
+        self._computefactors()
+
+    def ndims(self):
+        return len(self._dimensions)
+
+    def length(self, dimension):
+        assert 0 < dimension < self.ndims(), "Dimension not in valid range."
+        return self._dimensions[dimension - 1]
+
+    def clear(self, value):
+        self._elements.clear(value)
+
+    def __getitem__(self, index_tuple):
+        assert len(index_tuple) == self.ndims(), "Must have exactly " + str(self.ndims()) + " indices."
+        index = self._computeindex(index_tuple)
+        return self._elements[index]
+
+    def __setitem__(self, index_tuple, value):
+        assert len(index_tuple) == self.ndims(), "Must have exactly " + str(self.ndims()) + " indices."
+        index = self._computeindex(index_tuple)
+        self._elements[index] = value
+
+    def _computeindex(self, index_tuple):
+        index = 0
+        for i in range(self.ndims()):
+            index += index_tuple[i] * self._factors[i]
+        return index
+
+    def _computefactors(self):
+        for i in range(len(self._factors)):
+            for j in range(i + 1, self.ndims()):
+                self._factors[i] *= self._dimensions[j]

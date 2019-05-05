@@ -25,7 +25,7 @@ class Map:
         self._entry_list.pop(index)
 
     def __iter__(self):
-        return MapIterator(self._entry_list)
+        return _MapIterator(self._entry_list)
 
     def findKey(self, key):
         return self._entry_list.index(key)
@@ -37,7 +37,7 @@ class MapEntry:
         self.value = value
 
 
-class MapIterator:
+class _MapIterator:
     def __init__(self, list):
         self._list_reference = list
         self._current_index = 0

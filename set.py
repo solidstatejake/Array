@@ -79,11 +79,32 @@ class Set:
                 new_set.add(element)
         return new_set
 
+    def __lt__(self, other_set):
+        return self.isProperSubsetOf(other_set)
+
+    def __le__(self, other_set):
+        return self.isSubsetOf(other_set)
+
+    def __gt__(self, other_set):
+        return other_set.isProperSubsetOf(self)
+
+    def __ge__(self, other_set):
+        return other_set.isSubsetOf(self)
+
+    def __add__(self, other_set):
+        return self.union(other_set)
+
+    def __mul__(self, other_set):
+        return self.intersection(other_set)
+
+    def __sub__(self, other_set):
+        return self.difference(other_set)
+
     def __iter__(self):
-        return SetIterator(self.elements)
+        return _SetIterator(self.elements)
 
 
-class SetIterator:
+class _SetIterator:
 
     def __init__(self, set):
         self._set_reference = set
