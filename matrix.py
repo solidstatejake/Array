@@ -59,23 +59,3 @@ class Matrix:
         for i in range(self.nrow):
             for j in range(self.ncol):
                 print(self.matrix[i, j]) if j == self.ncol - 1 else print(self.matrix[i, j], end=' ')
-
-
-matrix = Matrix(10, 2)
-
-other = Matrix(2, 3)
-
-for i in range(10):
-    for j in range(2):
-        matrix.matrix[i, j] = i + 1
-
-matrix.print()
-for i in range(2):
-    for j in range(3):
-        other.matrix[i, j] = j + 1
-
-other.print()
-
-final_matrix = matrix * other
-
-final_matrix.print()

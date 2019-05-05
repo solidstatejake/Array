@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1d281ce-dcb7-421d-80b1-11195b5117c5" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Array.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/arrayClass.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/matrix.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/set.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matrix.py" beforeDir="false" afterPath="$PROJECT_DIR$/matrix.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/set.py" beforeDir="false" afterPath="$PROJECT_DIR$/set.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,7 +23,7 @@
       <file leaf-file-name="arrayClass.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/arrayClass.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
+            <state relative-caret-position="-338">
               <caret line="35" column="3" selection-start-line="35" selection-start-column="3" selection-end-line="48" selection-end-column="31" />
             </state>
           </provider>
@@ -38,8 +32,8 @@
       <file leaf-file-name="matrix.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/matrix.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-388">
-              <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+            <state relative-caret-position="795">
+              <caret line="53" column="38" lean-forward="true" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -47,8 +41,8 @@
       <file leaf-file-name="set.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/set.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="553">
-              <caret line="109" column="17" lean-forward="true" selection-start-line="109" selection-start-column="17" selection-end-line="109" selection-end-column="17" />
+            <state relative-caret-position="517">
+              <caret line="101" selection-start-line="101" selection-end-line="101" />
             </state>
           </provider>
         </entry>
@@ -56,8 +50,8 @@
       <file leaf-file-name="map.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/map.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="517">
-              <caret line="53" column="31" lean-forward="true" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
+            <state relative-caret-position="457">
+              <caret line="49" column="63" lean-forward="true" selection-start-line="49" selection-start-column="63" selection-end-line="49" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -80,9 +74,9 @@
         <option value="$PROJECT_DIR$/array.py" />
         <option value="$PROJECT_DIR$/__init__.py" />
         <option value="$PROJECT_DIR$/arrayClass.py" />
+        <option value="$PROJECT_DIR$/map.py" />
         <option value="$PROJECT_DIR$/matrix.py" />
         <option value="$PROJECT_DIR$/set.py" />
-        <option value="$PROJECT_DIR$/map.py" />
       </list>
     </option>
   </component>
@@ -220,18 +214,27 @@
       <option name="presentableId" value="Default" />
       <updated>1556825286836</updated>
     </task>
+    <task id="LOCAL-00001" summary="Implement 1D and 2D ctype array classes. Use Array2D class to implement matrix class with multiplicative method. Implement mathematical set class using list.">
+      <created>1557016673747</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1557016673747</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" sideWeight="0.50061053" side_tool="true" visible="true" weight="0.32923076" />
+      <window_info anchor="bottom" id="Event Log" sideWeight="0.501221" side_tool="true" visible="true" weight="0.32923076" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.496337" weight="0.32923076" />
-      <window_info active="true" anchor="bottom" id="Version Control" sideWeight="0.4993895" visible="true" weight="0.32923076" />
+      <window_info anchor="bottom" id="Version Control" sideWeight="0.4993895" weight="0.32923076" />
       <window_info anchor="bottom" id="Python Console" sideWeight="0.4981685" weight="0.32923076" />
-      <window_info anchor="bottom" id="Terminal" sideWeight="0.4993895" weight="0.32923076" />
+      <window_info active="true" anchor="bottom" id="Terminal" sideWeight="0.498779" visible="true" weight="0.32923076" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.0970696" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="right" id="Database" />
@@ -254,6 +257,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Implement 1D and 2D ctype array classes. Use Array2D class to implement matrix class with multiplicative method. Implement mathematical set class using list." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement 1D and 2D ctype array classes. Use Array2D class to implement matrix class with multiplicative method. Implement mathematical set class using list." />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <default-breakpoints>
@@ -270,31 +277,31 @@
     <entry file="file://$PROJECT_DIR$/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/arrayClass.py">
+    <entry file="file://$PROJECT_DIR$/matrix.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="35" column="3" selection-start-line="35" selection-start-column="3" selection-end-line="48" selection-end-column="31" />
+        <state relative-caret-position="795">
+          <caret line="53" column="38" lean-forward="true" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/matrix.py">
+    <entry file="file://$PROJECT_DIR$/arrayClass.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-388">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        <state relative-caret-position="-338">
+          <caret line="35" column="3" selection-start-line="35" selection-start-column="3" selection-end-line="48" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/set.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="109" column="17" lean-forward="true" selection-start-line="109" selection-start-column="17" selection-end-line="109" selection-end-column="17" />
+        <state relative-caret-position="517">
+          <caret line="101" selection-start-line="101" selection-end-line="101" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/map.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="53" column="31" lean-forward="true" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
+        <state relative-caret-position="457">
+          <caret line="49" column="63" lean-forward="true" selection-start-line="49" selection-start-column="63" selection-end-line="49" selection-end-column="63" />
         </state>
       </provider>
     </entry>

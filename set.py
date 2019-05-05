@@ -99,12 +99,3 @@ class SetIterator:
             return element
         else:
             raise StopIteration
-
-
-set = Set([1,2,3])
-
-print(set.length)
-
-set.add(2)
-
-print(set.length)
