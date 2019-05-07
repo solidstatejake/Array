@@ -1,4 +1,4 @@
-# Implements an array ADT using array capabilities of ctypes module; a module which allows
+k# Implements an array ADT using array capabilities of ctypes module; a module which allows
 # for use of data structures from the C language and relevant libraries.
 import ctypes
 
@@ -7,9 +7,8 @@ class Array:
 
     def __init__(self, size):
         assert size > 0, "Array size must be greater than 0."
-        self.length = size
-        PyArrayType = ctypes.py_object * size
-        self.elements = PyArrayType()
+        self.size = size
+        self.elements = list(ctypes.py_object() for i in range(self.size))
         self.clear(None)
 
     def __len__(self):

@@ -3,10 +3,7 @@
 class Set:
 
     def __init__(self, element_list):
-        self.elements = list(element_list)
-        for element in element_list:
-            if element not in self.elements:
-                self.elements.append(element)
+        self.elements = list(filter(lambda e: e not in self.elements, element_list))
 
     def __len__(self):
         return len(self.elements)
