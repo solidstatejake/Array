@@ -89,6 +89,7 @@ class Array2D:
         for row in self._row_array:
             row.clear(value)
 
+
 class MultiArray:
 
     def __init__(self, *dimensions):

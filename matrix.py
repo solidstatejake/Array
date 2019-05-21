@@ -48,6 +48,10 @@ class Matrix:
                         sum = 0
         return new_matrix
 
+    def __eq__(self, matrix):
+        assert isinstance(matrix, Matrix), "Must check equality of two matrices."
+
+
     def transpose(self):
         new_matrix = Matrix(self.nrow, self.ncol)
         for i in range(self.nrow):
@@ -59,3 +63,4 @@ class Matrix:
         for i in range(self.nrow):
             for j in range(self.ncol):
                 print(self.matrix[i, j]) if j == self.ncol - 1 else print(self.matrix[i, j], end=' ')
+
